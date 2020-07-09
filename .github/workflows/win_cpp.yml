@@ -8,6 +8,8 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Check git
+      run: git --version
     - name: Check cmake
       run: cmake --version
     - name: Configure
